@@ -7,6 +7,13 @@ from token_multi_sender import TokenMultiSender
 from utils import WalletType
 
 is_prod = False
+
+print("Token Multi Sender started..")
+ans = input(f"TMS is running with {'production' if is_prod else 'dev'} environment! \n\t Are you sure to continue? (yes/no)\n")
+if ans != "yes":
+    print("exiting..")
+    exit()
+
 env_path = ".env" if is_prod else ".env.dev"
 config = Config(config_dict=dotenv_values(dotenv_path=env_path))
 
