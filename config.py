@@ -1,7 +1,7 @@
 from typing import Dict
 
 
-class Config():
+class Config:
     def __init__(self, config_dict: Dict[str, str]):
         self.config = config_dict
 
