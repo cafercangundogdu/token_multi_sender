@@ -1,0 +1,2 @@
+python-dotenv~=0.20.0
+web3~=5.28.0
