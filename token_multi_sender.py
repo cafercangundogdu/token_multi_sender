@@ -95,4 +95,4 @@ class TokenMultiSender:
             self.fire("before_transfer", {"address": address, "amount": amount})
             tx_hash = self.__transfer(address, amount)
             self.fire("after_transfer", {"address": address, "amount": amount, "tx_hash": tx_hash})
-            time.sleep(10)
+            time.sleep(0.1)
